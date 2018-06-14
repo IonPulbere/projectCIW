@@ -66,6 +66,6 @@ color: #fff;
 @keyframes forvalidate {
       0% {visibility: visible;}
       100%{visibility: hidden;color:rgb(128,0,0);
-        background-color: yellow;
+        background-color: red;
       }
 }
