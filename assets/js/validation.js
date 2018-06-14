@@ -1,6 +1,6 @@
 // Just one field
 // try to validate the email input
-var item = document.querySelector('.field input[type="email"]');
+// var item = document.querySelector('.field input[type="email"]');
 function CheckIfISEmpty(item, formName) {
   //Validation Form
   function validationForm() {
