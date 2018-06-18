@@ -10,7 +10,7 @@ color: #fff;
 }
 /*  form format*/
 .mainform{
-  padding: 20px;
+  padding: 1.8em;
   display: flex;
   flex-direction: column;
   border: 1px solid;
@@ -18,11 +18,15 @@ color: #fff;
   width: 30rem;
   margin-left: auto;
   margin-right: auto;
+
+
 }
 .field{
   display: flex;
     padding-top:20px;
     position: relative;
+    align-items: center;
+    font-size: 1.2em;
 }
 .field label{
   display: block;
@@ -31,17 +35,23 @@ color: #fff;
 .field input{
   display:block;
   width: 60%;
+  line-height: 1.5;
 }
+.field input:not([type='submit']){
+  padding-left: 1em;
 
+}
 .field input[type='submit']{
 
-  width: 50%;
+  width: 30%;
   margin-left: auto;
   margin-right: auto;
   font-size: 1.2em;
   border-radius: 10px;
 }
-
+.field input[type='submit']:focus{
+  outline: none;
+}
 /* class for validation */
 .validate-me{
   color: yellow;
@@ -53,8 +63,8 @@ color: #fff;
   padding:10px;
   padding-left: 30px;
   border-radius: 5px;
-  right: 2.9em;
-  top:1.2em;
+  right: 1.8em;
+  top:2em;
   /*  add abackgroud sign*/
   background-image: url('../img/alert-icon.png');
   background-size: 10%;
@@ -68,4 +78,33 @@ color: #fff;
       100%{visibility: hidden;color:rgb(128,0,0);
         background-color: yellow;
       }
+}
+/* footer Effect ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+#contentContainer{
+  margin: .2em auto;
+  width: 30%;
+
+}
+#contentContainer p{
+  text-align: center;
+  color: red;
+  background-image: url(../img/foot.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 10px 0px;
+    /* for clip */
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text; /* for chrome*/
+}
+
+#contentContainer p:hover{
+  color: #fff;
+  animation: forfooter 2s forwards;
+
+}
+
+@keyframes forfooter {
+    0%{color:white;}
+    100%{color:yellow;}
 }
