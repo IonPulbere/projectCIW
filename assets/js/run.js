@@ -1,13 +1,13 @@
 
 var elem= document.getElementById('pid');
 var anim;
-var currentPos=0;
+var currentPos=20;
 var s=elem.style.backgroundPosition
 
 function move(){
-currentPos+=1;
+currentPos+=3;
 elem.style.backgroundPosition=currentPos+"px 0px"
-    if(Math.abs(currentPos)>=500){
+    if(Math.abs(currentPos)>=300){
       currentPos=-50;
     }
     anim=requestAnimationFrame(move);
